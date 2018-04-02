@@ -1,0 +1,21 @@
+<div class="select-time" ng-class="{ 'invalid': invalid }">
+    <input type="text"
+        ng-numeric-input
+        class="select-time__input"
+        data-max-length="2"
+        ng-model="hours"
+        data-min="0"
+        data-max="99"
+        ng-change="changeHours()"
+    />
+    <span>:</span>
+    <input type="text"
+        ng-numeric-input
+        class="select-time__input"
+        data-max-length="2"
+        ng-model="minutes"
+        data-min="0"
+        data-max="59"
+        ng-change="changeMinutes()"
+    />
+</div>
